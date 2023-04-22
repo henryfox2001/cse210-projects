@@ -49,19 +49,23 @@ class Program
         string symbol;
         symbol = "";
 
-        lastDigit = percentage % 10;
+        lastDigit = percentage % 10; // To get the last digit, you could divide the number by 10, and get the remainder.
 
+        // it is a "+" if the last digit is >= 7
         if (lastDigit >= 7)
         {
             symbol = "+";
         }
+        // it is a minus if the last digit is < 3
         else if (lastDigit < 3)
         {
             symbol = "-";
         }
+        // otherwise it has no sign
         else
         {
             symbol = "";
+
         }
 
         if (percentage >= 93)
