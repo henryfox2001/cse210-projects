@@ -36,7 +36,6 @@ class Program
                     entry._journalEntry = userEntry;
                     Console.Clear();
                     journal._journal.Add(entry);
-
                     break;
                 case 2: // Display Journal Entries.
                     journal.Display();
