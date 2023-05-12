@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] validNumbers = { 1, 2, 3, 4, 5 };
+        //int[] validNumbers = { 1, 2, 3, 4, 5 };
         int action = 0;
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Blue;
