@@ -73,9 +73,7 @@ class Program
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write("\nWhat would you like to do? ");
         Console.ResetColor();
-
         string choices = @"";
-
         Console.Write(choices);
         string userInput = Console.ReadLine();
         Console.Clear();
