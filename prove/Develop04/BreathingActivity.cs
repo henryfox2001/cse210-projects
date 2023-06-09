@@ -4,7 +4,6 @@ public class BreathingActivity : Activity
 {
 
     // Attributes 
-    private string _description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
     private string _message1 = "Breathe in... ";
     private string _message2 = "Now breathe out... ";
     
@@ -12,13 +11,6 @@ public class BreathingActivity : Activity
     // Constructors
     public BreathingActivity(string activityName, int activityTime) : base(activityName, activityTime)
     {
-    }
-
-    public void GetActivityDescription()
-    {
-        Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine(_description);
-        Console.ResetColor();
     }
 
     public void Breathing(int seconds)

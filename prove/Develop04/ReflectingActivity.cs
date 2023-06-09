@@ -30,19 +30,11 @@ public class ReflectingActivity : Activity
 
     private string _prompt;
     private string _question;
-    private string _description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
 
     // Constructors
     // Methods
     public ReflectingActivity(string activityName, int activityTime) : base(activityName, activityTime)
     {
-    }
-
-    public void GetActivityDescription()
-    {
-        Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine(_description);
-        Console.ResetColor();
     }
 
     private string GetRandomPrompt()
@@ -85,7 +77,7 @@ public class ReflectingActivity : Activity
         _useQuestionsList.AddRange(_questionList); //creates a new list that can be destroyed each time.
         Spinner spinner = new Spinner();
         Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine($"\n->->-> Now ponder on each of the following questions as they related to this experience. <-<-<-");
+        Console.WriteLine($"\nNow ponder on each of the following questions as they related to this experience.");
         Console.ResetColor();
         CountDown(8);
         Console.Clear();

@@ -6,6 +6,7 @@ public class Activity
     private string _activityName;
     private int _activityTime;
     private string _message = "You may begin in... ";
+    protected string _description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
 
     // Constructors
     public Activity(string activityName, int activityTime)
@@ -18,6 +19,13 @@ public class Activity
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Welcome to the {_activityName} Activity!\n");
+        Console.ResetColor();
+    }
+
+    public void GetActivityDescription()
+    {
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
+        Console.WriteLine(_description);
         Console.ResetColor();
     }
 
@@ -47,7 +55,6 @@ public class Activity
             ClearCurrentConsoleLine();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("How long, in seconds, would you like your session to be? => ");
-            
             Console.ResetColor();
         }
 

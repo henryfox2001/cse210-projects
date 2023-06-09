@@ -15,17 +15,9 @@ public class ListingActivity : Activity
     };
 
     private List<string> _userList = new List<string>();
-    private string _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
 
     public ListingActivity(string activityName, int activityTime) : base(activityName, activityTime)
     {
-    }
-
-    public void GetActivityDescription()
-    {
-        Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine(_description);
-        Console.ResetColor();
     }
 
     private string GetRandomPrompt()
