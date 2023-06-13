@@ -8,6 +8,7 @@ namespace Learning05
         public string shapeColor = "Green";
         static void Main(string[] args)
         {
+            Console.Clear();
             List<Shape> shapes = new List<Shape>();
             Square shape1 = new Square("Green", 8);
             shapes.Add(shape1);
