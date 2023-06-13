@@ -24,4 +24,5 @@ namespace Learning05
         // Methods
         public abstract double GetArea();
     }
+    
 }

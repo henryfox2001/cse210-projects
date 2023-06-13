@@ -18,4 +18,5 @@ namespace Learning05
             return _side * _side;
         }
     }
+    
 }
