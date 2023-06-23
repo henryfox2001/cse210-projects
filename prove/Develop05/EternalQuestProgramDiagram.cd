@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Program">
+    <Position X="2" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAAABAAACAAAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoalMenu">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>GoalMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuestProgram">
+    <Position X="5.25" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAogAAAAIKAQAAIQAAAAAAAAAAAAAAAAAAAAEIAAAAA=</HashCode>
+      <FileName>QuestProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goal">
+    <Position X="5.25" Y="4.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAKAAAAYEoAAAAAAAAAAAAAEAAAAAEAAABAA=</HashCode>
+      <FileName>Goal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleGoal">
+    <Position X="0.5" Y="9" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAKAAAAYAAAQAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>SimpleGoal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EternalGoal">
+    <Position X="6.75" Y="9.25" Width="5" />
+    <InheritanceLine Type="Goal" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="8.42" />
+        <Point X="7.25" Y="9.009" />
+        <Point X="8.375" Y="9.009" />
+        <Point X="8.375" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAKAAAAYAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>EternalGoal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NegativeGoal">
+    <Position X="9.5" Y="13" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAKAAAAYAAAQAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>NegativeGoal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChecklistGoal">
+    <Position X="0.5" Y="13" Width="7.75" />
+    <InheritanceLine Type="Goal" ManuallyRouted="true">
+      <Path>
+        <Point X="7.25" Y="8.42" />
+        <Point X="7.25" Y="9.009" />
+        <Point X="6.16" Y="9.009" />
+        <Point X="6.16" Y="12.625" />
+        <Point X="4.375" Y="12.625" />
+        <Point X="4.375" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEQAAAECAKAAAAYAAAQAAAAQAAAAAiAAAACAEAAAAEA=</HashCode>
+      <FileName>ChecklistGoal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
