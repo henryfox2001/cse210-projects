@@ -17,6 +17,7 @@ public class NegativeGoal : Goal
         _status = status;
         _type = "Negative Goal:";
     }
+    
     // Methods
     public override void ListGoal(int i)
     {
@@ -32,7 +33,9 @@ public class NegativeGoal : Goal
     }
     public override int RecordGoalEvent(List<Goal> goals)
     {
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine($"I'm sorry! You have Lost {GetPoints()} points!");
+        Console.ResetColor();
         return _points * -1;
     }
 
