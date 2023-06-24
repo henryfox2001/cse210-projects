@@ -36,11 +36,7 @@ public class SimpleGoal : Goal
     }
     public override string SaveGoal()
     {
-        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}");
-    }
-    public override string LoadGoal()
-    {
-        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}");
+        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {Finished()}");
     }
     public override int RecordGoalEvent(List<Goal> goals)
     {

@@ -33,7 +33,6 @@ public abstract class Goal
     // Methods
     public abstract void ListGoal(int i);
     public abstract string SaveGoal();
-    public abstract string LoadGoal();
     public abstract int RecordGoalEvent(List<Goal> goals);
 
 }

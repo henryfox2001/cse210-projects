@@ -35,11 +35,11 @@ public class ChecklistGoal : Goal
     {
         _count = _count + 1;
     }
-     public int GetCount()
+    public int GetCount()
     {
         return _count;
     }
-     public int GetBonusPoints()
+    public int GetBonusPoints()
     {
         return _bonusPoints;
     }
@@ -63,13 +63,8 @@ public class ChecklistGoal : Goal
     }
     public override string SaveGoal()
     {
-        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}| {GetTimes()}| {GetBonusPoints()}| {GetCount()}");
+        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {Finished()}| {GetTimes()}| {GetBonusPoints()}| {GetCount()}");
     }
-    public override string LoadGoal()
-    {
-        return ($"Check List Goal:| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}| {GetTimes()}| {GetBonusPoints()}| {GetCount()}");
-    }
-
     public override int RecordGoalEvent(List<Goal> goals)
     {
         SetTimes();
@@ -90,5 +85,5 @@ public class ChecklistGoal : Goal
             return _points;
         }
     }
-    
+
 }

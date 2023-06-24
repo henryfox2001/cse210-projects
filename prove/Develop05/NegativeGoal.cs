@@ -17,7 +17,11 @@ public class NegativeGoal : Goal
         _status = status;
         _type = "Negative Goal:";
     }
-    
+    public Boolean Finished()
+    {
+        return _status;
+    }
+
     // Methods
     public override void ListGoal(int i)
     {
@@ -25,11 +29,7 @@ public class NegativeGoal : Goal
     }
     public override string SaveGoal()
     {
-        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}");
-    }
-    public override string LoadGoal()
-    {
-        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {_status}");
+        return ($"{_type}| {GetName()}| {GetDescription()}| {GetPoints()}| {Finished()}");
     }
     public override int RecordGoalEvent(List<Goal> goals)
     {
