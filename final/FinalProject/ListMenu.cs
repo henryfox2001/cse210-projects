@@ -1,8 +1,9 @@
 using System;
+using HangmanGame;
 
 public class ListMenu : Menu
 {
-    // Attributes 
+    // Attributes
     private string _menu = $@"
                 List Options
 >>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<
@@ -15,10 +16,14 @@ Your list Options are:
 Which list would you like to use?  ";
 
     // Constructors
+    public ListMenu()
+    {
+    }
 
     // Methods
     public override void DisplayMenu()
     {
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.Write(_menu);
     }
 
@@ -29,19 +34,28 @@ Which list would you like to use?  ";
         {
             Hangman game = new Hangman();
             _action = UserChoice();
+            Console.ResetColor();
             switch (_action)
             {
-                case 1: // Console.WriteLine("Success Choice 1!");
+                case 1:
+                    _wordFileName = "animals.txt";
+                    game.StartGame(_wordFileName);
                     break;
                 case 2:
+                    _wordFileName = "colors.txt";
+                    game.StartGame(_wordFileName);
                     break;
                 case 3:
+                    _wordFileName = "sports.txt";
+                    game.StartGame(_wordFileName);
                     break;
                 case 4: // Back to Main Menu
                     Console.Clear(); // This will clear the console
                     break;
                 default:
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"\nSorry the option you entered is not valid!");
+                    Console.ResetColor();
                     Thread.Sleep(2000);
                     Console.Clear(); // This will clear the console
                     break;

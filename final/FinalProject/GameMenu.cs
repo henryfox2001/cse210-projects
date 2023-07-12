@@ -1,4 +1,5 @@
 using System;
+using HangmanGame;
 
 public class GameMenu : Menu
 {
@@ -6,18 +7,19 @@ public class GameMenu : Menu
     private string _menu = $@"
                 Game Options
 >>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<
-Your Game Options are:
+Chooce One Option:
 1. Random Words
 2. Pick your word topic
 3. Back to Main Menu
 >>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<
-Which game would you like to play?  ";
+Which game would you like to play? ";
 
     // Constructors
 
     // Methods
     public override void DisplayMenu()
     {
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.Write(_menu);
     }
 
@@ -30,6 +32,7 @@ Which game would you like to play?  ";
         // switch case for goals menu
         {
             _action = UserChoice();
+            Console.ResetColor();
             switch (_action)
             {
                 case 1: // Random Words
@@ -46,7 +49,9 @@ Which game would you like to play?  ";
                     Console.Clear(); // This will clear the console
                     break;
                 default:
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"\nSorry the option you entered is not valid!");
+                    Console.ResetColor();
                     Thread.Sleep(2000);
                     Console.Clear();  // This will clear the console
                     break;

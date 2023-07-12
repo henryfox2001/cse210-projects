@@ -42,10 +42,14 @@ Select an option from the menu:  ";
 >>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<";
 
     // Constructors
+    public MainMenu()
+    {
+    }
 
     // Methods
     public override void DisplayMenu()
     {
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.Write(_menu);
     }
 
@@ -60,8 +64,9 @@ Select an option from the menu:  ";
         while (_action != 3)
         // switch case for main menu
         {
-            // Ask for user input (1-6)
+            // Ask for user input (1-3)
             _action = UserChoice();
+            Console.ResetColor();
             switch (_action)
             {
                 case 1: // Play Game
@@ -71,15 +76,23 @@ Select an option from the menu:  ";
                 
                 case 2: // How to Play
                     Console.Clear(); // This will clear the console
+                    HowToPlay info = new HowToPlay();
+                    info.GetInstructions();
                     break;
                 case 3: // Quite
                     PrintGoodbye();
                     break;
                 default:
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"\nSorry the option you entered is not valid!");
+                    Console.ResetColor();
                     Thread.Sleep(2000);
                     Console.Clear(); // This will clear the console
                     break;
+            }
+            if (_action == 1)
+            {
+                gameMenu = new GameMenu();
             }
         }
     }
@@ -87,12 +100,16 @@ Select an option from the menu:  ";
     private void PrintWelcome()
     {
         Console.Clear(); // This will clear the console
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.Write($"{_welcome}\n");
+        Console.ResetColor();
     }
 
     private void PrintGoodbye()
     {
         Console.Clear(); // This will clear the console
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.Write($"{_goodbye}\n\n");
+        Console.ResetColor();
     }
 }

@@ -29,6 +29,16 @@ Now you have read the Hangman rules, let's play the game!
 
     public void GetInstructions()
     {
-        throw new NotImplementedException();
+        Console.Clear();  // This will clear the console
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.Write(_howToPlay);
+        Console.ResetColor();
+
+        // Enter key to exit page
+        var input = Console.ReadKey();
+        if (input.Key == ConsoleKey.Enter)
+        {
+            Console.Clear();  // This will clear the console
+        }
     }
 }

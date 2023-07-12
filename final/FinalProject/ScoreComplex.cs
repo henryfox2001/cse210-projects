@@ -8,11 +8,24 @@ public class ScoreComplex : ScoringRules
 
     public override int CalculateScore(int numGuesses, List<string> letters, string word)
     {
-        throw new NotImplementedException();
+        len = word.Length;
+        if (len <= 7)
+        {
+            score = numGuesses * 2;
+        }
+        else if (len > 7 & len <= 9)
+        {
+            score = numGuesses * 3;
+        }
+        else
+        {
+            score = numGuesses * 4;
+        }
+        return score;
     }
 
     public override void ShowScore()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"Your complex word score: {score} ");
     }
 }
