@@ -3,7 +3,6 @@ using System;
 public class ScoreSimple : ScoringRules
 {
     // Attributes
-    private int score;
 
     // Constructors
 
