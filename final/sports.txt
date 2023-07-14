@@ -10,7 +10,7 @@ canoeing
 cheerleading
 climbing
 cricket
-crossfit
+CrossFit
 curling
 cycling
 darts
@@ -28,7 +28,7 @@ golf
 gymnastics
 handball
 hockey
-javeling
+javelin
 judo
 karate
 kayaking
@@ -44,7 +44,7 @@ poker
 polo
 powerlifting
 quidditch
-raccquetball
+racquetball
 racing
 rodeo
 rugby
@@ -53,7 +53,7 @@ sailing
 shooting
 skateboarding
 skating
-skiiing
+skiing
 snooker
 snowboarding
 soccer
